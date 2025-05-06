@@ -8,7 +8,7 @@ contract Assignment9Test is Test {
     Assignment9 assignment;
 
     function setUp() public {
-        assignment = new Assignment9();
+        assignment = new Assignment9(address(this));
     }
 
     function testFactoryPattern() public {
